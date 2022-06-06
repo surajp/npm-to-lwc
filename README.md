@@ -27,3 +27,5 @@ Download the script and copy it to your sfdx project root folder. Run `./npmtolw
 - A single command to convert any npm package to an LWC-ready static resource.
 - Import multiple modules (related or unrelated) into a single static resource file.
 - Clear instructions on how to refer to the module(s) in your LWC once loaded.
+
+The script might take a bit longer to run the first time as it downloads `webpack` and other dependencies.
