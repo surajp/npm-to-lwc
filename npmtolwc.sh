@@ -100,5 +100,9 @@ cp ./dist/bundle.js "./force-app/main/default/staticresources/$resourcename"
 cp "$dlpath/resource-meta.xml" "./force-app/main/default/staticresources/$resourcename.resource-meta.xml"
 #sfdx force:source:push
 
-echo "Static Resource named \"$resourcename\" has been generated. You may deploy this, load it in your LWC and refer to the modules as $exportlibname.<module name>. For example, $exportlibname.${exportString%%,*}"
+echo 
+echo 
+echo 
+
+echo "$(tput setaf 5)Static Resource named \"$resourcename\" has been generated. You may deploy this, load it in your LWC and refer to the modules as $exportlibname.<module name>. For example, $exportlibname.${exportString%%,*}"
 

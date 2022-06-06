@@ -18,9 +18,9 @@ Download the script and copy it to your sfdx project root folder. Run `./npmtolw
 
 ## Examples
 
-- Running `./npmtolwc.sh d3-scale,d3-time -s time` will create a static resource file named `time` in your project's `staticResources` folder. After importing the resource in your LWC you can use the functions in `d3-scale` with the syntax `d3scale_d3time.d3scale.<function name>`
+- Running `./npmtolwc.sh d3-scale,d3-time -s time` will create a static resource file named `time` in your project's `staticResources` folder. The name of the library inside the static resource would be `d3scale_d3time`. After importing the resource in your LWC you can use the functions in `d3-scale` with the syntax `d3scale_d3time.d3scale.<function name>`
 
-- Running `./npmtolwc.sh d3-scale,d3-time -s time -l timescale` will create a static resource file named `time` in your project's `staticresources` folder. After importing the resource in your LWC you can use the functions in `d3-scale` with the syntax `timescale.d3scale.<function name>`
+- Running `./npmtolwc.sh d3-scale,d3-time -s time -l timescale` will create a static resource file named `time` in your project's `staticresources` folder. The name of the library inside the static resource would be `timescale`. After importing the resource in your LWC you can use the functions in `d3-scale` with the syntax `timescale.d3scale.<function name>`
 
 ## Features
 
