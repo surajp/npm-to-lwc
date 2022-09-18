@@ -58,7 +58,7 @@ npm install --save-dev $packagenames
 
 if [ ! -d "node_modules/webpack" ] || [ ! -d "node_modules/webpack-cli" ]
 then
-  npm install --save-dev webpack webpack-cli
+  npm install --save-dev webpack@4 webpack-cli@4 # webpack 5 removed polyfills for core node modules
 fi
 
 
