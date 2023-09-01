@@ -90,7 +90,7 @@ do
   echo "const $import = require(\"$lib\");" >> ./webpack-src/index.js
   exportString="$exportString$import,"
 done
-echo "export {${exportString::-1}}" >> ./webpack-src/index.js
+echo "export {${exportString::${#exportString}-1}}" >> ./webpack-src/index.js
 npx webpack-cli
 if [ ! -d "force-app/main/default/staticresources" ]
 then
